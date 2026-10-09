@@ -1,0 +1,33 @@
+{
+  "name": "bms-bone-implant-measurement-system",
+  "version": "16.0.0",
+  "description": "BMS desktop software for bone measurement and patient-specific implant planning.",
+  "main": "main.js",
+  "author": "BMS",
+  "license": "UNLICENSED",
+  "scripts": {
+    "start": "electron .",
+    "dist:win": "electron-builder --win nsis portable",
+    "dist": "electron-builder"
+  },
+  "devDependencies": {
+    "electron": "^38.0.0",
+    "electron-builder": "^26.0.12"
+  },
+  "build": {
+    "appId": "com.bms.medical.bms",
+    "productName": "BMS – Bone & Implant Measurement System",
+    "directories": { "output": "dist" },
+    "files": ["main.js", "preload.js", "app/**/*"],
+    "win": {
+      "target": ["nsis", "portable"],
+      "artifactName": "BMS-${version}-${arch}.${ext}"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true
+    }
+  }
+}

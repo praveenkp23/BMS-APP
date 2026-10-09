@@ -1,0 +1,26 @@
+{
+  "policy": "AUTHORIZED_ONLY",
+  "records": [],
+  "record_schema": {
+    "id": "Unique registry ID",
+    "bone": "Anatomical target, e.g. Femur",
+    "type": "plate | nail",
+    "manufacturer": "Legal manufacturer / brand",
+    "model": "Exact model/family",
+    "catalogue": "Exact catalogue/product number",
+    "length_mm": "Exact manufacturer catalogue length",
+    "diameter_mm": "Exact manufacturer nail diameter/thickness (nail only)",
+    "plate_holes": "Exact number of holes (plate only)",
+    "plate_width_mm": "Exact plate width (plate only)",
+    "authorizationStatus": "VERIFIED_CURRENT only may be recommended",
+    "currentVerified": "Boolean hard gate",
+    "cdscoRef": "Current CDSCO licence/import authorization evidence",
+    "bisStandard": "Applicable BIS/ISO standard reference",
+    "source": "Manufacturer catalogue/IFU + regulatory evidence",
+    "verificationDate": "YYYY-MM-DD",
+    "selectionRationale": "Optional manufacturer/system-specific rationale for why this exact configuration is appropriate",
+    "deviceCategory": "Optional category such as anatomical locking plate or intramedullary nail",
+    "verificationMethod": "How current authorization/provenance was verified",
+    "lastCheckedBy": "Reviewer or organization that performed verification"
+  }
+}
